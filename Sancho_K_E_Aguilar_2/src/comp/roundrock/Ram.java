@@ -4,6 +4,9 @@ public class Ram extends Componente {
 
     private String capacidad;
 
+
+
+
     public String getCapacidad() {
         return capacidad;
     }
@@ -12,8 +15,10 @@ public class Ram extends Componente {
         this.capacidad = capacidad;
     }
 
-    public Ram(int rating, String tipoComponente, int idComponente, double precio, String capacidad) {
-        super(rating, tipoComponente, idComponente, precio);
+
+
+    public Ram(int rating, String tipoComponente, int idComponente, double precio, String modelo, String capacidad) {
+        super(rating, tipoComponente, idComponente, precio, modelo);
         super.setTipoComponente("Ram");
         this.capacidad = capacidad;
     }
@@ -21,6 +26,7 @@ public class Ram extends Componente {
     @Override
     public String toString() {
         return "Tipo de componente: " + getTipoComponente() +
+                "\nModelo: " + getModelo() +
                 "\nCapacidad" + getCapacidad() +
                 "\nPrecio: " + getPrecio() +
                 "\nId Componente: " + getIdComponente() +

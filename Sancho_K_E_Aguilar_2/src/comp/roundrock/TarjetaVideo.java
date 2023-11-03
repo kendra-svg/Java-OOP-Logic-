@@ -1,21 +1,26 @@
 package comp.roundrock;
 
 public class TarjetaVideo extends Componente {
-    private String modelo;
 
-    public String getModelo() {
-        return modelo;
+
+    private int cantidadVentiladores;
+
+    public int getCantidadVentiladores() {
+        return cantidadVentiladores;
     }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
+    public void setCantidadVentiladores(int cantidadVentiladores) {
+        this.cantidadVentiladores = cantidadVentiladores;
     }
 
-    public TarjetaVideo(int rating, String tipoComponente, int idComponente, double precio, String modelo) {
-        super(rating, tipoComponente, idComponente, precio);
+
+    public TarjetaVideo(int rating, String tipoComponente, int idComponente, double precio, String modelo, int cantidadVentiladores) {
+        super(rating, tipoComponente, idComponente, precio, modelo);
+        this.cantidadVentiladores = cantidadVentiladores;
         super.setTipoComponente("Tarjeta de Video");
-        this.modelo = modelo;
     }
+
+
 
     @Override
     public String toString() {

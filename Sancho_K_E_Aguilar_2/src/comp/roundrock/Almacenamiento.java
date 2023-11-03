@@ -22,13 +22,13 @@ public class Almacenamiento extends Componente {
         this.capacidad = capacidad;
     }
 
-    public Almacenamiento(int rating, String tipoComponente, int idComponente, double precio, String categoria, String capacidad) {
-        super(rating, tipoComponente, idComponente, precio);
+
+    public Almacenamiento(int rating, String tipoComponente, int idComponente, double precio, String modelo, String categoria, String capacidad) {
+        super(rating, tipoComponente, idComponente, precio, modelo);
         super.setTipoComponente("Almacenamiento");
         this.categoria = categoria;
         this.capacidad = capacidad;
     }
-
 
     @Override
     public String toString() {

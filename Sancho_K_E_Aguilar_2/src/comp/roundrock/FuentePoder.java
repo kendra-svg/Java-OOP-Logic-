@@ -12,12 +12,12 @@ public class FuentePoder extends Componente {
         this.duracionBateria = duracionBateria;
     }
 
-    public FuentePoder(int rating, String tipoComponente, int idComponente, double precio, String duracionBateria) {
-        super(rating, tipoComponente, idComponente, precio);
-        this.duracionBateria = duracionBateria;
-        super.setTipoComponente("Fuente de Poder");
-    }
 
+    public FuentePoder(int rating, String tipoComponente, int idComponente, double precio, String modelo, String duracionBateria) {
+        super(rating, tipoComponente, idComponente, precio, modelo);
+        super.setTipoComponente("Fuente de Poder");
+        this.duracionBateria = duracionBateria;
+    }
 
     @Override
     public String toString() {

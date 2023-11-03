@@ -2,17 +2,11 @@ package comp.roundrock;
 
 public class TarjetaMadre extends Componente {
 
-    private String modelo;
+
 
     private String chipset;
 
-    public String getModelo() {
-        return modelo;
-    }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
 
     public String getChipset() {
         return chipset;
@@ -22,13 +16,12 @@ public class TarjetaMadre extends Componente {
         this.chipset = chipset;
     }
 
+
     public TarjetaMadre(int rating, String tipoComponente, int idComponente, double precio, String modelo, String chipset) {
-        super(rating, tipoComponente, idComponente, precio);
+        super(rating, tipoComponente, idComponente, precio, modelo);
         super.setTipoComponente("Tarjeta Madre");
-        this.modelo = modelo;
         this.chipset = chipset;
     }
-
 
     @Override
     public String toString() {

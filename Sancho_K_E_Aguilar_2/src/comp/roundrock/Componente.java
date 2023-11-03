@@ -14,14 +14,25 @@ public class Componente {
 
     private double precio;
 
+    private String modelo;
 
-    public Componente(int rating, String tipoComponente, int idComponente, double precio) {
+
+    public Componente(int rating, String tipoComponente, int idComponente, double precio, String modelo) {
         this.rating = rating;
         this.tipoComponente = tipoComponente;
         //this.capacidad = capacidad;
         this.idComponente = idComponente;
         //this.categoria = categoria;
         this.precio = precio;
+        this.modelo = modelo;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
     }
 
     public int getRating() {
@@ -71,6 +82,9 @@ public class Componente {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+
+
+
 
     @Override
     public String toString() {

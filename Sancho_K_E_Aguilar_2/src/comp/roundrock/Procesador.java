@@ -2,18 +2,18 @@ package comp.roundrock;
 
 public class Procesador extends Componente {
 
-    private String cantidadNucleos;
+    private int cantidadNucleos;
 
-    public String getCantidadNucleos() {
+    public int getCantidadNucleos() {
         return cantidadNucleos;
     }
 
-    public void setCantidadNucleos(String cantidadNucleos) {
+    public void setCantidadNucleos(int cantidadNucleos) {
         this.cantidadNucleos = cantidadNucleos;
     }
 
-    public Procesador(int rating, String tipoComponente, int idComponente, double precio, String cantidadNucleos) {
-        super(rating, tipoComponente, idComponente, precio);
+    public Procesador(int rating, String tipoComponente, int idComponente, double precio, String modelo, int cantidadNucleos) {
+        super(rating, tipoComponente, idComponente, precio, modelo);
         super.setTipoComponente("Procesador");
         this.cantidadNucleos = cantidadNucleos;
     }
