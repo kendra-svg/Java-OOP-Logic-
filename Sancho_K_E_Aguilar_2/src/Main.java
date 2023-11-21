@@ -15,9 +15,8 @@ public class Main {
         ComponenteDAO componenteDAO = new ComponenteDAOMemoria();
         Vista vista = new Vista();
         ComponenteControlador componenteControlador = new ComponenteControlador(componenteDAO, vista);
-        componenteControlador.registrarComponente();
         FamiliaDAO familiaDAO = new FamiliaDAOMemoria();
-        //FamiliaControlador familiaControlador = new FamiliaControlador(familiaDAO, vista);
+        FamiliaControlador familiaControlador = new FamiliaControlador(familiaDAO, vista);
 
         Scanner scanner = new Scanner(System.in);
         int opcion;
@@ -45,12 +44,12 @@ public class Main {
                 case "Listar componente":
                     componenteControlador.listarComponente();
                    break;
-                //case "Registrar familia de computadoras":
-                    //FamiliaControlador.agregarFamilia();
-                    //break;
-                //case "Listar familias":
-                    //FamiliaControlador.listarFamilia();
-                    //break;
+                case "Registrar familia de computadoras":
+                    familiaControlador.registraFamilia();
+                    break;
+                case "Listar familias":
+                   familiaControlador.listarFamilia();
+                    break;
                 //case "Agregar componentes permitidos a una familia":
                    // FamiliaControlador.agregarComponentePermitido();
                     //break;
