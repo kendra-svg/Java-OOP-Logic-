@@ -26,6 +26,11 @@ public class ComponenteControlador {
 
     }
 
+    public void agregarComponenteAFamilia(){
+        Componente nuevoComponente = vista.agregarComponenteFamilia();
+        componenteDAO.agregar(nuevoComponente);
+    }
+
 
 }
 

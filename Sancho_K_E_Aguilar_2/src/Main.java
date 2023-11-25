@@ -50,9 +50,9 @@ public class Main {
                 case "Listar familias":
                    familiaControlador.listarFamilia();
                     break;
-                //case "Agregar componentes permitidos a una familia":
-                   // FamiliaControlador.agregarComponentePermitido();
-                    //break;
+                case "Agregar componentes permitidos a una familia":
+                    componenteControlador.agregarComponenteAFamilia();
+                    break;
             }
         } while (opcion != opciones.length - 1); // Mientras no sea la última opción (salir siempre es la última)
     }
