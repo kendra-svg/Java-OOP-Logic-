@@ -44,13 +44,13 @@ public class Main {
                 case "Listar componente":
                     componenteControlador.listarComponente();
                    break;
-                case "Registrar familia de computadoras":
+                case "Registrar familia de computadora":
                     familiaControlador.registraFamilia();
                     break;
-                case "Listar familias":
+                case "Listar familia":
                    familiaControlador.listarFamilia();
                     break;
-                case "Agregar componentes permitidos a una familia":
+                case "Agregar componente permitido a una familia":
                     componenteControlador.agregarComponenteAFamilia();
                     break;
             }
